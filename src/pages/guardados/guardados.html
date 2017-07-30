@@ -13,6 +13,11 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+<ion-list inset>
+  <button ion-item *ngFor="let item of history;index as index" (click)="open(index)">
+    {{ item.info }}
+  </button> 
+</ion-list>
 
 </ion-content>
